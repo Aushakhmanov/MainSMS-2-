@@ -1,0 +1,17 @@
+C:\Users\АушахмановИ\source\repos\SMS\SMS\bin\Debug\SMS.exe.config
+C:\Users\АушахмановИ\source\repos\SMS\SMS\bin\Debug\SMS.exe
+C:\Users\АушахмановИ\source\repos\SMS\SMS\bin\Debug\SMS.pdb
+C:\Users\АушахмановИ\source\repos\SMS\SMS\bin\Debug\Microsoft.IdentityModel.Logging.dll
+C:\Users\АушахмановИ\source\repos\SMS\SMS\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+C:\Users\АушахмановИ\source\repos\SMS\SMS\bin\Debug\Newtonsoft.Json.dll
+C:\Users\АушахмановИ\source\repos\SMS\SMS\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\АушахмановИ\source\repos\SMS\SMS\bin\Debug\Twilio.dll
+C:\Users\АушахмановИ\source\repos\SMS\SMS\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+C:\Users\АушахмановИ\source\repos\SMS\SMS\bin\Debug\Newtonsoft.Json.xml
+C:\Users\АушахмановИ\source\repos\SMS\SMS\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\АушахмановИ\source\repos\SMS\SMS\bin\Debug\Twilio.xml
+C:\Users\АушахмановИ\source\repos\SMS\SMS\obj\Debug\SMS.csprojAssemblyReference.cache
+C:\Users\АушахмановИ\source\repos\SMS\SMS\obj\Debug\SMS.csproj.CoreCompileInputs.cache
+C:\Users\АушахмановИ\source\repos\SMS\SMS\obj\Debug\SMS.csproj.CopyComplete
+C:\Users\АушахмановИ\source\repos\SMS\SMS\obj\Debug\SMS.exe
+C:\Users\АушахмановИ\source\repos\SMS\SMS\obj\Debug\SMS.pdb

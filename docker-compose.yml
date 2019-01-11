@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  sms:
+    image: ${DOCKER_REGISTRY}sms
+    build:
+      context: .\SMS
+      dockerfile: Dockerfile
