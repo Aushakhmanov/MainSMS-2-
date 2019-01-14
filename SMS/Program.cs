@@ -33,7 +33,7 @@ namespace SMS
             TwilioClient.Init(accountSid, authToken);
 
             var message = MessageResource.Create(
-                body: "2222",
+                body: "Олжас мешок",
                 from: new Twilio.Types.PhoneNumber("+18646332809"),
                 to: new Twilio.Types.PhoneNumber("+77784717809")
             );

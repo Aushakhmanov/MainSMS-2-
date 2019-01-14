@@ -73,53 +73,236 @@ namespace SMS
             Console.WriteLine("Введите логин");
             _login = Console.ReadLine();
 
-Console.WriteLine("Введите пароль");
-                _FirstPassword = Console.ReadLine();
-                Console.WriteLine("Подтвердите пароль");
-                _SecondPassword = Console.ReadLine();
-            while (true)
-            {
-                
-                if (_FirstPassword != _SecondPassword)
-                {
-                   
-                    Console.WriteLine("Пароли не совпадают");
-                    Console.WriteLine("Введите пароль заново");
-                    _FirstPassword = Console.ReadLine();
-                    Console.WriteLine("Подтвердите пароль");
-                    _SecondPassword = Console.ReadLine();
-                    Console.Clear();
-                }
-                else
-                {
-                    Console.WriteLine("Все прошло успешно");
-                    break;
-                }
-            }
 
-            //string pass = "";
-            //do
+
+            //while (true)
             //{
-            //    ConsoleKeyInfo key = Console.ReadKey(true);
-            //    // Backspace Should Not Work
-            //    if (key.Key != ConsoleKey.Backspace && key.Key != ConsoleKey.Enter)
+
+
+
+            //    if (_FirstPassword != _SecondPassword)
             //    {
-            //        pass += key.KeyChar;
-            //        Console.Write("*");
+
+            //        Console.WriteLine("Пароли не совпадают");
+            //        Console.WriteLine("Введите пароль заново");
+            //        _FirstPassword = Console.ReadLine();
+            //        Console.WriteLine("Подтвердите пароль");
+            //        _SecondPassword = Console.ReadLine();
+            //        Console.Clear();
             //    }
             //    else
             //    {
-            //        if (key.Key == ConsoleKey.Backspace && pass.Length > 0)
-            //        {
-            //            pass = pass.Substring(0, (pass.Length - 1));
-            //            Console.Write("\b \b");
-            //        }
-            //        else if (key.Key == ConsoleKey.Enter)
-            //        {
-            //            break;
-            //        }
+            //        Console.WriteLine("Все прошло успешно");
+            //        break;
             //    }
-            //} while (true);
+            //}
+
+             _FirstPassword = "";
+            Console.WriteLine("Введите пароль");
+            
+                do
+                {
+                    ConsoleKeyInfo key = Console.ReadKey(true);
+                    // Backspace Should Not Work
+                    if (key.Key != ConsoleKey.Backspace && key.Key != ConsoleKey.Enter)
+                    {
+
+                        //_FirstPassword = Console.ReadLine();
+
+                        //_SecondPassword = Console.ReadLine();
+
+                        _FirstPassword += key.KeyChar;
+                        Console.Write("*");
+                    }
+                    else
+                    {
+                        if (key.Key == ConsoleKey.Backspace && _FirstPassword.Length > 0)
+                        {
+                            _FirstPassword = _FirstPassword.Substring(0, (_FirstPassword.Length - 1));
+                            Console.Write("\b \b");
+                        }
+                        else if (key.Key == ConsoleKey.Enter)
+                        {
+                            break;
+                        }
+
+                    }
+                } while (true);
+                 _SecondPassword = "";
+                Console.WriteLine("");
+                Console.WriteLine("Подтвердите пароль");
+                do
+                {
+                    ConsoleKeyInfo key = Console.ReadKey(true);
+                    // Backspace Should Not Work
+                    if (key.Key != ConsoleKey.Backspace && key.Key != ConsoleKey.Enter)
+                    {
+
+                        
+
+                        _SecondPassword += key.KeyChar;
+                        Console.Write("*");
+                    }
+                    else
+                    {
+                        if (key.Key == ConsoleKey.Backspace && _SecondPassword.Length > 0)
+                        {
+                            _SecondPassword = _SecondPassword.Substring(0, (_SecondPassword.Length - 1));
+                            Console.Write("\b \b");
+                        }
+                        else if (key.Key == ConsoleKey.Enter)
+                        {
+                            break;
+                        }
+                    }
+                if (_FirstPassword != _SecondPassword)
+                {
+                    Console.WriteLine("Пароли не совпадают");
+                    Console.WriteLine("Введите пароль заново");
+                    do
+                    {
+                        ConsoleKeyInfo key = Console.ReadKey(true);
+                        // Backspace Should Not Work
+                        if (key.Key != ConsoleKey.Backspace && key.Key != ConsoleKey.Enter)
+                        {
+
+                            //_FirstPassword = Console.ReadLine();
+
+                            //_SecondPassword = Console.ReadLine();
+
+                            _FirstPassword += key.KeyChar;
+                            Console.Write("*");
+                        }
+                        else
+                        {
+                            if (key.Key == ConsoleKey.Backspace && _FirstPassword.Length > 0)
+                            {
+                                _FirstPassword = _FirstPassword.Substring(0, (_FirstPassword.Length - 1));
+                                Console.Write("\b \b");
+                            }
+                            else if (key.Key == ConsoleKey.Enter)
+                            {
+                                break;
+                            }
+
+                        }
+                    } while (true);
+
+
+                    Console.WriteLine("Подтвердите пароль");
+                    do
+                    {
+                        ConsoleKeyInfo key = Console.ReadKey(true);
+                        // Backspace Should Not Work
+                        if (key.Key != ConsoleKey.Backspace && key.Key != ConsoleKey.Enter)
+                        {
+
+
+
+                            _SecondPassword += key.KeyChar;
+                            Console.Write("*");
+                        }
+                        else
+                        {
+                            if (key.Key == ConsoleKey.Backspace && _SecondPassword.Length > 0)
+                            {
+                                _SecondPassword = _SecondPassword.Substring(0, (_SecondPassword.Length - 1));
+                                Console.Write("\b \b");
+                            }
+                            else if (key.Key == ConsoleKey.Enter)
+                            {
+                                break;
+                            }
+                        }
+                    } while (true);
+                }
+                else
+                {
+                    //Console.WriteLine("");
+                    Console.WriteLine("Все прошло успешно");
+                    break;
+                }
+
+            } while (true);
+
+
+
+
+            //while (true)
+            //{
+
+            //    if (_FirstPassword != _SecondPassword)
+            //    {
+
+            //        Console.WriteLine("Пароли не совпадают");
+            //        Console.WriteLine("Введите пароль заново");
+            //        do
+            //        {
+            //            ConsoleKeyInfo key = Console.ReadKey(true);
+            //            // Backspace Should Not Work
+            //            if (key.Key != ConsoleKey.Backspace && key.Key != ConsoleKey.Enter)
+            //            {
+
+            //                //_FirstPassword = Console.ReadLine();
+
+            //                //_SecondPassword = Console.ReadLine();
+
+            //                _FirstPassword += key.KeyChar;
+            //                Console.Write("*");
+            //            }
+            //            else
+            //            {
+            //                if (key.Key == ConsoleKey.Backspace && _FirstPassword.Length > 0)
+            //                {
+            //                    _FirstPassword = _FirstPassword.Substring(0, (_FirstPassword.Length - 1));
+            //                    Console.Write("\b \b");
+            //                }
+            //                else if (key.Key == ConsoleKey.Enter)
+            //                {
+            //                    break;
+            //                }
+
+            //            }
+            //        } while (true);
+
+
+            //        Console.WriteLine("Подтвердите пароль");
+            //        do
+            //        {
+            //            ConsoleKeyInfo key = Console.ReadKey(true);
+            //            // Backspace Should Not Work
+            //            if (key.Key != ConsoleKey.Backspace && key.Key != ConsoleKey.Enter)
+            //            {
+
+
+
+            //                _SecondPassword += key.KeyChar;
+            //                Console.Write("*");
+            //            }
+            //            else
+            //            {
+            //                if (key.Key == ConsoleKey.Backspace && _SecondPassword.Length > 0)
+            //                {
+            //                    _SecondPassword = _SecondPassword.Substring(0, (_SecondPassword.Length - 1));
+            //                    Console.Write("\b \b");
+            //                }
+            //                else if (key.Key == ConsoleKey.Enter)
+            //                {
+            //                    break;
+            //                }
+            //            }
+            //        } while (true);
+
+            //        Console.Clear();
+            //    }
+            //    else
+            //    {
+            //        //Console.WriteLine("");
+            //        Console.WriteLine("Все прошло успешно");
+            //        break;
+            //    }
+            //}
+
 
 
 
@@ -136,9 +319,12 @@ Console.WriteLine("Введите пароль");
 
 
                 }
-                
-                
+                else
+                {
+
+
                     break;
+                }
                 
                 
             }
