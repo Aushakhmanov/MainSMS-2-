@@ -5,8 +5,6 @@ VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS", "SMS\SMS.csproj", "{119F52D8-9056-4C5A-92E2-955A6542FA76}"
 EndProject
-Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{005F7875-F934-4552-8E78-8FF91D4B573E}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{119F52D8-9056-4C5A-92E2-955A6542FA76}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{119F52D8-9056-4C5A-92E2-955A6542FA76}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{119F52D8-9056-4C5A-92E2-955A6542FA76}.Release|Any CPU.Build.0 = Release|Any CPU
-		{005F7875-F934-4552-8E78-8FF91D4B573E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{005F7875-F934-4552-8E78-8FF91D4B573E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{005F7875-F934-4552-8E78-8FF91D4B573E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{005F7875-F934-4552-8E78-8FF91D4B573E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
